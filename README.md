@@ -78,3 +78,6 @@ debe levantar un nuevo servidor, manual o automáticamente.
 ![image](https://user-images.githubusercontent.com/58041699/188499473-830f4fcc-b3fa-4d60-ac15-85a44d98aa1f.png)
 
 ![image](https://user-images.githubusercontent.com/58041699/188499610-fb933340-9f6d-4111-8075-7f84b24d2951.png)
+
+![image](https://user-images.githubusercontent.com/58041699/188499764-4090576d-3103-4008-b135-3b84c3103faf.png)
+
