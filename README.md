@@ -65,19 +65,33 @@ debe levantar un nuevo servidor, manual o automáticamente.
 
 ## Failover
 
+En la implementacion de un Failover, se debe hacer seguimiento al estado de los servidores puesto que si un servidor falla es necesario levantar otro para que asi el numero de peticiones no sea sobrecargado para los otros servidores. En esta ocasion, a traves de minikube si observamos el dashboard podemos encontrar los servidores activos.
 ![image](https://user-images.githubusercontent.com/58041699/188496714-397d6e8b-b954-43f2-97ac-fb3e02408078.png)
+
+En la siguiente imagen si un servidor se cae, existen otros dos que estaran ecuchando las peticiones de los usuarios. Puesto que el balanceador de carga, administra las peticiones, dandole al usuario los servicios que esten funcionando.
 
 ![image](https://user-images.githubusercontent.com/58041699/188496944-e760d7bd-d924-4619-87b3-d10ad0373edd.png)
 
+A continuacion, se puede observar los eventos sucedidos tras la caida de un servidor.
+
 ![image](https://user-images.githubusercontent.com/58041699/188497240-446917cc-edce-4e50-b881-29f39c72a284.png)
+
+ A traves de los comandos que ofrece la herramienta kubectl, podemos observar mensajes que describen el problema del servidor.
 
 ![image](https://user-images.githubusercontent.com/58041699/188497315-be5f2c1b-4b0c-4059-b66d-51192c51cf43.png)
 
+Aun con la caida del servidor, el servicio implementado en minikube puede seguir mostrandose ante los usuarios.
+
 ![image](https://user-images.githubusercontent.com/58041699/188497900-96deea7a-465e-42c3-b05b-f72be4adf636.png)
+
+Los servidores del sistema, si tratan con muchas peticiones pueden sobrecargarse los servidores y asi dañar los que restan. Para ello, se levantara un servidor de manera manual, lo que ayudara a distribuir las peticiones en ese servidor y asi facilitar el ingreso de usuarios.
 
 ![image](https://user-images.githubusercontent.com/58041699/188499473-830f4fcc-b3fa-4d60-ac15-85a44d98aa1f.png)
 
+A continuacion, se puede observar en el dashboard que se ha implementado un nuevo servidor y que esta activo.
+
 ![image](https://user-images.githubusercontent.com/58041699/188499610-fb933340-9f6d-4111-8075-7f84b24d2951.png)
 
+A su vez podemos comprobar que el servicio Balanceador de Carga esta haciendo uso de los 3 servidores.
 ![image](https://user-images.githubusercontent.com/58041699/188499764-4090576d-3103-4008-b135-3b84c3103faf.png)
 
