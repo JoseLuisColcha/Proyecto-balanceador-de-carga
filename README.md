@@ -63,35 +63,68 @@ debe levantar un nuevo servidor, manual o automáticamente.
 
 [![Whats-App-Image-2022-09-05-at-3-29-34-AM.jpg](https://i.postimg.cc/Ghc3ytQH/Whats-App-Image-2022-09-05-at-3-29-34-AM.jpg)](https://postimg.cc/0rBqg8hs)
 
-## Failover
+## Failover  📌
 
-En la implementacion de un Failover, se debe hacer seguimiento al estado de los servidores puesto que si un servidor falla es necesario levantar otro para que asi el numero de peticiones no sea sobrecargado para los otros servidores. En esta ocasion, a traves de minikube si observamos el dashboard podemos encontrar los servidores activos.
+* En la implementacion de un Failover, se debe hacer seguimiento al estado de los servidores puesto que si un servidor falla es necesario levantar otro para que asi el   numero de peticiones no sea sobrecargado para los otros servidores. En esta ocasion, a traves de minikube si observamos el dashboard podemos encontrar los servidores   activos.
 ![image](https://user-images.githubusercontent.com/58041699/188496714-397d6e8b-b954-43f2-97ac-fb3e02408078.png)
 
-En la siguiente imagen si un servidor se cae, existen otros dos que estaran ecuchando las peticiones de los usuarios. Puesto que el balanceador de carga, administra las peticiones, dandole al usuario los servicios que esten funcionando.
+* En la siguiente imagen si un servidor se cae, existen otros dos que estaran ecuchando las peticiones de los usuarios. Puesto que el balanceador de carga, administra las peticiones, dandole al usuario los servicios que esten funcionando.
 
 ![image](https://user-images.githubusercontent.com/58041699/188496944-e760d7bd-d924-4619-87b3-d10ad0373edd.png)
 
-A continuacion, se puede observar los eventos sucedidos tras la caida de un servidor.
+* A continuacion, se puede observar los eventos sucedidos tras la caida de un servidor.
 
 ![image](https://user-images.githubusercontent.com/58041699/188497240-446917cc-edce-4e50-b881-29f39c72a284.png)
 
- A traves de los comandos que ofrece la herramienta kubectl, podemos observar mensajes que describen el problema del servidor.
+ * A traves de los comandos que ofrece la herramienta kubectl, podemos observar mensajes que describen el problema del servidor.
 
 ![image](https://user-images.githubusercontent.com/58041699/188497315-be5f2c1b-4b0c-4059-b66d-51192c51cf43.png)
 
-Aun con la caida del servidor, el servicio implementado en minikube puede seguir mostrandose ante los usuarios.
+* Aun con la caida del servidor, el servicio implementado en minikube puede seguir mostrandose ante los usuarios.
 
 ![image](https://user-images.githubusercontent.com/58041699/188497900-96deea7a-465e-42c3-b05b-f72be4adf636.png)
 
-Los servidores del sistema, si tratan con muchas peticiones pueden sobrecargarse los servidores y asi dañar los que restan. Para ello, se levantara un servidor de manera manual, lo que ayudara a distribuir las peticiones en ese servidor y asi facilitar el ingreso de usuarios.
+* Los servidores del sistema, si tratan con muchas peticiones pueden sobrecargarse los servidores y asi dañar los que restan. Para ello, se levantara un servidor de manera manual, lo que ayudara a distribuir las peticiones en ese servidor y asi facilitar el ingreso de usuarios.
 
 ![image](https://user-images.githubusercontent.com/58041699/188499473-830f4fcc-b3fa-4d60-ac15-85a44d98aa1f.png)
 
-A continuacion, se puede observar en el dashboard que se ha implementado un nuevo servidor y que esta activo.
+* A continuacion, se puede observar en el dashboard que se ha implementado un nuevo servidor y que esta activo.
 
 ![image](https://user-images.githubusercontent.com/58041699/188499610-fb933340-9f6d-4111-8075-7f84b24d2951.png)
 
-A su vez podemos comprobar que el servicio Balanceador de Carga esta haciendo uso de los 3 servidores.
+* A su vez podemos comprobar que el servicio Balanceador de Carga esta haciendo uso de los 3 servidores.
 ![image](https://user-images.githubusercontent.com/58041699/188499764-4090576d-3103-4008-b135-3b84c3103faf.png)
+
+## Conexiones activas  📌
+Para la simulación de usuarios que ingresan al sistema se utilizo el gestor de pruebas JMeter.
+
+* Lo primero es crear un plan de pruebas y colocarle un nombre.
+[![Captura-de-pantalla-2022-09-05-124756.png](https://i.postimg.cc/MKnNYx7V/Captura-de-pantalla-2022-09-05-124756.png)](https://postimg.cc/4mTWJDFx)
+
+* Paso siguiente se genera un grupo de hilos el cual servirá para simular los usuarios que ingresan al sistema, se coloca el número de usuarios en este caso 100 y a la vez se coloca el intervalo de tiempo en el cual cada usuario se conecta en este caso 20 segundos
+
+[![Captura-de-pantalla-2022-09-05-125134.png](https://i.postimg.cc/x8rFdNZR/Captura-de-pantalla-2022-09-05-125134.png)](https://postimg.cc/0MfCWjPM)
+
+* Luego se configura el protocolo , el servidor central y el puerto donde se encuentra el servicio. 
+
+[![Captura-de-pantalla-2022-09-05-125617.png](https://i.postimg.cc/Y2fJSbpL/Captura-de-pantalla-2022-09-05-125617.png)](https://postimg.cc/bdr6C0Sq)
+
+* Luego se crea un arbol de de resultados donde se visualiza las peticiones que se estan realizando los usuarios.
+
+[![Captura-de-pantalla-2022-09-05-132628.png](https://i.postimg.cc/7Z6bxK2q/Captura-de-pantalla-2022-09-05-132628.png)](https://postimg.cc/SJBmd7dP)
+
+* DE igual forma se genera un gráfico donde se visualiza la subida y bajada del tiempo cuando han ingresado los usuarios al sistema.
+
+[![Captura-de-pantalla-2022-09-05-140459.png](https://i.postimg.cc/L8YRCwPg/Captura-de-pantalla-2022-09-05-140459.png)](https://postimg.cc/tsjL7r29)
+
+*Al detener un servidor se visualiza que la conexión continúa ejecutándose, gracias al balanceador de carga que redirecciona la petición a los otros servidores.
+
+[![Captura-de-pantalla-2022-09-05-134528.png](https://i.postimg.cc/nzT6cG7t/Captura-de-pantalla-2022-09-05-134528.png)](https://postimg.cc/fttH8XBH)
+
+
+
+
+
+
+
 
