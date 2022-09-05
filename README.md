@@ -59,7 +59,7 @@ debe levantar un nuevo servidor, manual o automáticamente.
 
 [![Whats-App-Image-2022-09-05-at-3-25-38-AM.jpg](https://i.postimg.cc/jq3S0tT9/Whats-App-Image-2022-09-05-at-3-25-38-AM.jpg)](https://postimg.cc/K4L2tXRr)
 
-13. Al establecer el servcio de balanceador de carga, se puede realizar despues el levantamiento del mismo, lo cual puede generar con diferentes paginas web estaticas con diferentes servidores.
+13. Al establecer el servcio de balanceador de carga, se puede realizar despues el levantamiento del mismo, lo cual puede generar diferentes paginas web estaticas en distintos servidores.
 
 [![Whats-App-Image-2022-09-05-at-3-29-34-AM.jpg](https://i.postimg.cc/Ghc3ytQH/Whats-App-Image-2022-09-05-at-3-29-34-AM.jpg)](https://postimg.cc/0rBqg8hs)
 
