@@ -113,11 +113,11 @@ Para la simulación de usuarios que ingresan al sistema se utilizo el gestor de 
 
 [![Captura-de-pantalla-2022-09-05-132628.png](https://i.postimg.cc/7Z6bxK2q/Captura-de-pantalla-2022-09-05-132628.png)](https://postimg.cc/SJBmd7dP)
 
-* DE igual forma se genera un gráfico donde se visualiza la subida y bajada del tiempo cuando han ingresado los usuarios al sistema.
+* De igual forma se genera un gráfico donde se visualiza la subida y bajada del tiempo cuando han ingresado los usuarios al sistema.
 
 [![Captura-de-pantalla-2022-09-05-140459.png](https://i.postimg.cc/L8YRCwPg/Captura-de-pantalla-2022-09-05-140459.png)](https://postimg.cc/tsjL7r29)
 
-*Al detener un servidor se visualiza que la conexión continúa ejecutándose, gracias al balanceador de carga que redirecciona la petición a los otros servidores.
+* Al detener un servidor se visualiza que la conexión continúa ejecutándose, gracias al balanceador de carga que redirecciona la petición a los otros servidores.
 
 [![Captura-de-pantalla-2022-09-05-134528.png](https://i.postimg.cc/nzT6cG7t/Captura-de-pantalla-2022-09-05-134528.png)](https://postimg.cc/fttH8XBH)
 
