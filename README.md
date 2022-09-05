@@ -14,11 +14,11 @@ debe levantar un nuevo servidor, manual o automáticamente.
 [![3fbfb852-0bf8-434a-a9cd-875a55de2a70.jpg](https://i.postimg.cc/wTF6r56c/3fbfb852-0bf8-434a-a9cd-875a55de2a70.jpg)](https://postimg.cc/rK0X0rRK)
 
 ## Funcionamiento 📌
-1. Como primer paso se procede a crear una carpeta que contiene el sistema web y el archivo Dockerfile.
+1. Como primer paso se procede a crear una carpeta que contiene el sistema web y el archivo Dockerfile. Estos archivos son necesarios para generar una imagen dentro de docker, lo cual ayudara para realizar el levantamiento de los servidores con minikube.
 
 [![Whats-App-Image-2022-09-05-at-3-12-39-AM.jpg](https://i.postimg.cc/xd68Zg7L/Whats-App-Image-2022-09-05-at-3-12-39-AM.jpg)](https://postimg.cc/QBWj9gjM)
 
-2. Para el despliegue del sistema web se configura el archivo Dockerfile y posteriomente se visualiza el sistema en docker.
+2. Para el despliegue del sistema web se configura el archivo Dockerfile y posteriomente se realiza la ejecucion del mismo.
 
 [![Whats-App-Image-2022-09-05-at-3-13-59-AM.jpg](https://i.postimg.cc/NjfxSGfV/Whats-App-Image-2022-09-05-at-3-13-59-AM.jpg)](https://postimg.cc/SJ38zh97)
 
