@@ -99,6 +99,7 @@ debe levantar un nuevo servidor, manual o automáticamente.
 Para la simulación de usuarios que ingresan al sistema se utilizo el gestor de pruebas JMeter.
 
 * Lo primero es crear un plan de pruebas y colocarle un nombre.
+* 
 [![Captura-de-pantalla-2022-09-05-124756.png](https://i.postimg.cc/MKnNYx7V/Captura-de-pantalla-2022-09-05-124756.png)](https://postimg.cc/4mTWJDFx)
 
 * Paso siguiente se genera un grupo de hilos el cual servirá para simular los usuarios que ingresan al sistema, se coloca el número de usuarios en este caso 100 y a la vez se coloca el intervalo de tiempo en el cual cada usuario se conecta en este caso 20 segundos
@@ -111,11 +112,11 @@ Para la simulación de usuarios que ingresan al sistema se utilizo el gestor de 
 
 * Luego se crea un arbol de de resultados donde se visualiza las peticiones que se estan realizando los usuarios.
 
-[![Captura-de-pantalla-2022-09-05-132628.png](https://i.postimg.cc/7Z6bxK2q/Captura-de-pantalla-2022-09-05-132628.png)](https://postimg.cc/SJBmd7dP)
+[![Captura-de-pantalla-2022-09-05-132443.png](https://i.postimg.cc/13PZ9XVP/Captura-de-pantalla-2022-09-05-132443.png)](https://postimg.cc/jL81cshk)
 
 * De igual forma se genera un gráfico donde se visualiza la subida y bajada del tiempo cuando han ingresado los usuarios al sistema.
 
-[![Captura-de-pantalla-2022-09-05-140459.png](https://i.postimg.cc/L8YRCwPg/Captura-de-pantalla-2022-09-05-140459.png)](https://postimg.cc/tsjL7r29)
+[![Captura-de-pantalla-2022-09-05-132628.png](https://i.postimg.cc/7Z6bxK2q/Captura-de-pantalla-2022-09-05-132628.png)](https://postimg.cc/SJBmd7dP)
 
 * Al detener un servidor se visualiza que la conexión continúa ejecutándose, gracias al balanceador de carga que redirecciona la petición a los otros servidores.
 
