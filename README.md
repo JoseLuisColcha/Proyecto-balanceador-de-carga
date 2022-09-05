@@ -63,3 +63,18 @@ debe levantar un nuevo servidor, manual o automáticamente.
 
 [![Whats-App-Image-2022-09-05-at-3-29-34-AM.jpg](https://i.postimg.cc/Ghc3ytQH/Whats-App-Image-2022-09-05-at-3-29-34-AM.jpg)](https://postimg.cc/0rBqg8hs)
 
+## Failover
+
+![image](https://user-images.githubusercontent.com/58041699/188496714-397d6e8b-b954-43f2-97ac-fb3e02408078.png)
+
+![image](https://user-images.githubusercontent.com/58041699/188496944-e760d7bd-d924-4619-87b3-d10ad0373edd.png)
+
+![image](https://user-images.githubusercontent.com/58041699/188497240-446917cc-edce-4e50-b881-29f39c72a284.png)
+
+![image](https://user-images.githubusercontent.com/58041699/188497315-be5f2c1b-4b0c-4059-b66d-51192c51cf43.png)
+
+![image](https://user-images.githubusercontent.com/58041699/188497900-96deea7a-465e-42c3-b05b-f72be4adf636.png)
+
+![image](https://user-images.githubusercontent.com/58041699/188499473-830f4fcc-b3fa-4d60-ac15-85a44d98aa1f.png)
+
+![image](https://user-images.githubusercontent.com/58041699/188499610-fb933340-9f6d-4111-8075-7f84b24d2951.png)
