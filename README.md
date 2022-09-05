@@ -97,9 +97,8 @@ debe levantar un nuevo servidor, manual o automáticamente.
 
 ## Conexiones activas  📌
 Para la simulación de usuarios que ingresan al sistema se utilizo el gestor de pruebas JMeter.
-
 * Lo primero es crear un plan de pruebas y colocarle un nombre.
-* 
+
 [![Captura-de-pantalla-2022-09-05-124756.png](https://i.postimg.cc/MKnNYx7V/Captura-de-pantalla-2022-09-05-124756.png)](https://postimg.cc/4mTWJDFx)
 
 * Paso siguiente se genera un grupo de hilos el cual servirá para simular los usuarios que ingresan al sistema, se coloca el número de usuarios en este caso 100 y a la vez se coloca el intervalo de tiempo en el cual cada usuario se conecta en este caso 20 segundos
