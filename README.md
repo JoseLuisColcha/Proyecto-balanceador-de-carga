@@ -12,6 +12,7 @@ debe levantar un nuevo servidor, manual o automáticamente.
 ## Videos 🎥
 
 ## Video de explicación técnica
+https://youtu.be/8Z9eNPilDrk
 
 ## Manual de usuario
 
