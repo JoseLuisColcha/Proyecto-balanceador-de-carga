@@ -11,9 +11,9 @@ debe levantar un nuevo servidor, manual o automáticamente.
 
 ## Videos
 
-# Manual técnico
+## Video de explicación técnica
 
-# Manual de usuario
+## Manual de usuario
 
 
 ## Arquitectura
