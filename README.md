@@ -9,6 +9,13 @@ debe levantar un nuevo servidor, manual o automáticamente.
 - Roberth Pincha
 - Luis Jacome
 
+## Videos
+
+# Manual técnico
+
+# Manual de usuario
+
+
 ## Arquitectura
 
 [![3fbfb852-0bf8-434a-a9cd-875a55de2a70.jpg](https://i.postimg.cc/wTF6r56c/3fbfb852-0bf8-434a-a9cd-875a55de2a70.jpg)](https://postimg.cc/rK0X0rRK)
