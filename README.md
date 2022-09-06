@@ -15,7 +15,7 @@ debe levantar un nuevo servidor, manual o automáticamente.
 https://youtu.be/8Z9eNPilDrk
 
 ## Manual de usuario
-
+https://youtu.be/Wmb6kMeOVag
 
 ## Arquitectura
 
